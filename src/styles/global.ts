@@ -7,13 +7,13 @@ export const GlobalStyle = createGlobalStyle`
     --background: #F0F2F5;
     --red: #E52E4D;
     --blue: #5429CC;
+    --green: #33CC95;
 
     --blue-light: #6933FF;
 
     --text-title: #363f5f;
     --text-body: #969cd3;
 
-    --background: #f8f2f5;
     --shape: #ffffff;
 }
 
