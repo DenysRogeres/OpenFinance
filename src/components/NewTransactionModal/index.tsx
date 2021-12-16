@@ -14,6 +14,10 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
 
     const [type, setType] = useState('deposit');
 
+    function handleCreateNewTransaction() {
+
+    }
+
     return(
         <Modal 
           isOpen={isOpen}
@@ -24,7 +28,7 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
         <div>
             <img src={closeImg} alt="Fechar" onClick={onRequestClose} className="react-modal-close"/>
         </div>
-        <Container>
+        <Container onSubmit={handleCreateNewTransaction}>
           <h2>Cadastrar transação</h2>
 
           <form>
