@@ -19,6 +19,14 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
 
     function handleCreateNewTransaction(event: FormEvent) {
         event.preventDefault();
+
+        //Verificando dados
+        console.log({
+            title, 
+            category,
+            value,
+            type
+        })
     }
 
     return(
@@ -33,8 +41,6 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
         </div>
         <Container onSubmit={handleCreateNewTransaction}>
           <h2>Cadastrar transação</h2>
-
-          <form>
               <input type="text" placeholder='Título' 
                 value={title} 
                 onChange={event => setTitle(event.target.value)}
@@ -68,8 +74,6 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
                 onChange={event => setCategory(event.target.value)}
                 />
               <button type="submit">Cadastrar</button>
-          </form>
-
         </Container>
         </Modal>
     )
